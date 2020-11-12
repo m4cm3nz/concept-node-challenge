@@ -1,0 +1,177 @@
+_type: export
+__export_format: 4
+__export_date: 2020-11-12T02:46:28.234Z
+__export_source: insomnia.desktop.app:v2020.4.2
+resources:
+  - _id: req_abb6c2562dcf4cfdb44e1f0605cbcd90
+    parentId: wrk_0b7dc5707d99441097dd1bf9bcf2c9c0
+    modified: 1605148660102
+    created: 1605148498377
+    url: "{{ base_url }}/repositories"
+    name: List
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1605148498377
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: wrk_0b7dc5707d99441097dd1bf9bcf2c9c0
+    parentId: null
+    modified: 1605148429173
+    created: 1605148429173
+    name: Bootcamp - Challenges
+    description: ""
+    scope: null
+    _type: workspace
+  - _id: req_ec36862b2ff1433aa689b570bc1aaba3
+    parentId: wrk_0b7dc5707d99441097dd1bf9bcf2c9c0
+    modified: 1605148781237
+    created: 1605148677297
+    url: "{{ base_url }}/repositories"
+    name: Create
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"url": "https://github.com/Rocketseat/umbriel",
+        	"title": "Umbriel",
+        	"techs": ["Node", "Express", "TypeScript"]	
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_d5fb3bc9833f4d81b063fc231dbca8b2
+    authentication: {}
+    metaSortKey: -1605107068878.5
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_cf683c9d05404d53aa26065fba95eb77
+    parentId: wrk_0b7dc5707d99441097dd1bf9bcf2c9c0
+    modified: 1605149106031
+    created: 1605149065357
+    url: "{{ base_url }}/repositories/dce8b65d-d441-4085-a17f-484d977d5e0d/like"
+    name: Like
+    description: ""
+    method: POST
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1605096711503.875
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_02007f8b4b8f41e78d33e6922f41688d
+    parentId: wrk_0b7dc5707d99441097dd1bf9bcf2c9c0
+    modified: 1605148947415
+    created: 1605148804550
+    url: "{{ base_url }}/repositories/9333b807-590e-4bea-bd58-470a89277c6b"
+    name: Update
+    description: ""
+    method: PUT
+    body:
+      mimeType: application/json
+      text: >-
+        {
+          "url": "https://github.com/Rocketseat/umbriel",	       "title": "Umbriel",
+        	"techs": ["Node", "Express"]	
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_d5fb3bc9833f4d81b063fc231dbca8b2
+    authentication: {}
+    metaSortKey: -1605086354129.25
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_e2d420a907c4440fabdc2e46ac637a5d
+    parentId: wrk_0b7dc5707d99441097dd1bf9bcf2c9c0
+    modified: 1605148980940
+    created: 1605148970813
+    url: "{{ base_url }}/repositories/9333b807-590e-4bea-bd58-470a89277c6b"
+    name: Delete
+    description: ""
+    method: DELETE
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1605075996754.625
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: env_370defd6ae6a4cfa9c79b10ebecf15520c5dd86b
+    parentId: wrk_0b7dc5707d99441097dd1bf9bcf2c9c0
+    modified: 1605148429232
+    created: 1605148429232
+    name: Base Environment
+    data: {}
+    dataPropertyOrder: null
+    color: null
+    isPrivate: false
+    metaSortKey: 1605148429232
+    _type: environment
+  - _id: jar_370defd6ae6a4cfa9c79b10ebecf15520c5dd86b
+    parentId: wrk_0b7dc5707d99441097dd1bf9bcf2c9c0
+    modified: 1605148429233
+    created: 1605148429233
+    name: Default Jar
+    cookies: []
+    _type: cookie_jar
+  - _id: spc_6053d43adf964440ada1c7eb6b029af4
+    parentId: wrk_0b7dc5707d99441097dd1bf9bcf2c9c0
+    modified: 1605148429183
+    created: 1605148429183
+    fileName: Bootcamp - Challenges
+    contents: ""
+    contentType: yaml
+    _type: api_spec
+  - _id: env_e3a5f5f357214dd2819527eb712a3b1b
+    parentId: env_370defd6ae6a4cfa9c79b10ebecf15520c5dd86b
+    modified: 1605148480666
+    created: 1605148440496
+    name: dev
+    data:
+      base_url: http://localhost:3333
+    dataPropertyOrder:
+      "&":
+        - base_url
+    color: "#7d69cb"
+    isPrivate: false
+    metaSortKey: 1605148440496
+    _type: environment
